@@ -37,6 +37,13 @@ h3 {
     
 }
 
+h6 {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    color:hsl(0, 0%, 10%);
+    opacity: 95%;
+}
 
 
 p, button{
@@ -61,15 +68,19 @@ p {
 }
 
 
-.section{
+.each_section{
 
     margin: 6rem 4rem  0 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:1.7rem;
 }
 
 
 
 
-/* Section wise Styles */
+/* header */
 
 
 #header{
@@ -128,16 +139,7 @@ p {
 
 
 
-
-#amount_section{
-
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap:2rem;
-
-}
+/* amount section */
 
 #amounts{
   
@@ -172,9 +174,9 @@ p {
 
 #amount_input {
 
-    width:20rem;
+    width:30rem;
     border:none;
-    border-bottom: 1px solid gray;
+    border-bottom: 1px solid hsl(0, 0%, 85%);
     outline:none;
     padding-bottom: 0.7rem;
     text-align: center;
@@ -184,27 +186,21 @@ p {
 
 
 
-#section_donation_plans {
-   
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap:1.5rem;
-    
-}
 
+
+/* donation plans section */
 
 
 .donation_plans {
     display: flex;
+    justify-content: space-between;
     gap:1.5rem;
 }
 
 
 
 .donation_plan{
-
+    flex-basis: 100%;
     padding: 1rem;
     display: flex;
     flex-direction: column;
@@ -224,17 +220,13 @@ p {
 
 
 
-#section_meet_our_volunteer {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap:2rem; 
-}
+
+/* meet our volunteers section */
 
 
 .volunteers {
     display: flex;
+    justify-content: space-between;
     gap:1.5rem;
 }
 
@@ -246,16 +238,13 @@ p {
     padding: 9rem 3rem 3rem 3rem;
     margin-top: 5.5rem;
     display:flex;
-    justify-content: center;
     align-items: center;
     flex-direction: column;
-
     text-align: center;
     background-color: hsl(0, 0%, 97%);
-    
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
-   
 }
+
 
 .volunteer img{
     position: absolute;
@@ -270,15 +259,9 @@ p {
 }
 
 
-#section_daily_updates {
-   
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap:1.5rem;
-    
-}
+
+/* daily updates */
+
 
 #email_wrapper {
     padding: 5rem 10rem;
@@ -300,20 +283,72 @@ p {
 
 
 
-
+/* footer */
 
 #footer {
     margin-top: 5rem;
     padding:3rem;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
+    gap:3rem;
     background-color: hsl(0, 0%, 20%);
     
 }
 
-#footer p {
+#footer h6{
 
     color: hsl(0, 0%, 98%);
+    
 }
+
+#footer p {
+    margin-bottom: 0.7rem;
+    color: hsl(0, 100%, 90%);
+    font-weight: 600;
+}
+
+
+#footer_sections{
+    display:flex; 
+    gap:5rem;
+}
+
+.footer_section {
+    flex-basis: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:0.7rem;
+    text-align: center;
+}
+
+
+
+.footer_section  a{
+    text-decoration: none;
+    color: hsl(0, 100%, 98%);
+
+}
+
+
+#footer_social_media {
+    margin-top: 1rem;
+    display:flex;
+    gap:0.5rem;
+}
+
+#footer_social_media svg {
+    color: hsl(0, 0%, 95%);
+    width:2rem;
+    height:2rem;
+}
+
+#footer_copyright h6 {
+
+    font-weight: 600;
+
+}
+
+    
+
