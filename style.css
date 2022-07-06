@@ -12,7 +12,7 @@
   }
 
 body {
-    background-color: hsl(0, 0%, 99%);
+    background-color: hsl(0, 0%, 100%);
 }
 
 
@@ -82,14 +82,16 @@ p {
 #header p, h1{
 
     color:hsl(0, 0%, 98%);
+    text-shadow: 1px 1px 2px black;
 } 
+
 
 #header img{
     position: absolute;
     width: 100%;
     height: 100%;
     object-fit:  cover;
-    object-position:  center;
+    object-position: center;
 }
 
 #header_img_overlay{
@@ -154,7 +156,8 @@ p {
     font-size: 1.5rem;
     font-weight: 700;
     color:hsl(0, 0%, 30%);
-    background-color: hsl(0, 0%, 95%);
+    background-color: hsl(0, 0%, 97%);
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 
 
@@ -202,7 +205,6 @@ p {
 
 .donation_plan{
 
-    background-color: hsl(0, 0%, 95%);
     padding: 1rem;
     display: flex;
     flex-direction: column;
@@ -210,7 +212,9 @@ p {
     align-items: center;
     gap:1rem;
     text-align: center;
-    border-bottom: 0.5rem solid hsl(0, 100%, 80%);
+    background-color: hsl(0, 0%, 97%);
+    border-bottom: 0.3rem solid hsl(0, 100%, 80%);
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
     
 }
 
@@ -247,8 +251,9 @@ p {
     flex-direction: column;
 
     text-align: center;
-    background-color: hsl(0, 0%, 95%);
-    border-bottom: 0.5rem solid hsl(0, 100%, 80%);
+    background-color: hsl(0, 0%, 97%);
+    
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
    
 }
 
@@ -258,7 +263,8 @@ p {
     height:12rem;
     width: 12rem;
     object-fit: cover;
-
+    border-top: .5rem solid hsl(0, 100%, 80%);
+    border-left: .5rem solid hsl(0, 100%, 80%);
     border-radius: 50%;
     
 }
@@ -277,8 +283,24 @@ p {
 #email_wrapper {
     padding: 5rem 10rem;
     background-color: hsl(0, 100%, 95%);
+    display:flex;
+    justify-content: center;
+    gap:0rem;
   
 }
+
+#email_wrapper input {
+
+    /* same padding as the input */
+    padding: 0.4rem 0.75rem;
+    border:0rem;
+    background-color: hsl(0, 0%, 99%);
+    outline:none;
+}
+
+
+
+
 
 #footer {
     margin-top: 5rem;
